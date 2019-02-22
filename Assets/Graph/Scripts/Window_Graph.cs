@@ -35,11 +35,12 @@ public class Window_Graph : MonoBehaviour {
     }
 
     private void Update() {
+        /*
       System.Random rnd = new System.Random();
       int newVal = rnd.Next(100);
       dataset.Add(newVal);
       valueList = dataset.GetRange(dataset.Count - pointLimit -1, pointLimit);
-      ShowGraph(valueList);
+      ShowGraph(valueList);*/
     }
 
     private GameObject CreateCircle(Vector2 anchoredPosition) {
@@ -54,7 +55,7 @@ public class Window_Graph : MonoBehaviour {
         return gameObject;
     }
 
-    private void ShowGraph(List<int> valueList, Func<int, String> getAxisLabelX = null, Func<float, String> getAxisLabelY=null) {
+    public void ShowGraph(List<int> valueList, Func<int, String> getAxisLabelX = null, Func<float, String> getAxisLabelY=null) {
 
         // Test for label defaults
         if (getAxisLabelX == null) {
