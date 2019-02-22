@@ -696,8 +696,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12f0a4d2a013d0a418a86f092050ebd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yMaximum: 100
-  circleSprite: {fileID: 21300000, guid: ef275adbab99ec841b5fb0dbc14a043d, type: 3}
+  StreamName: 
+  StreamType: 
+  useX: 1
+  useY: 1
+  useZ: 1
+  yMaximum: 1
+  pointLimit: 20
+  circleSprite: {fileID: 0}
 --- !u!1 &1680510177
 GameObject:
   m_ObjectHideFlags: 0
